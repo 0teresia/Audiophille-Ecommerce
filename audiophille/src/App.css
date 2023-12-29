@@ -1,0 +1,14 @@
+:root {
+  --color-primary: #ffa45c;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 1.6rem;
+}
