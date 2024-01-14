@@ -5,7 +5,7 @@ import Home from './Pages/Home/Home';
 import Category from './Pages/Category/Category';
 import Checkout from './pages/Checkout/Checkout';
 import ProductDetail from './Pages/ProductDetail/ProductDetail';
-import { HashRouter, Routes, Route} from "react-router-dom"
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { ContextProvider } from './Context/Context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
