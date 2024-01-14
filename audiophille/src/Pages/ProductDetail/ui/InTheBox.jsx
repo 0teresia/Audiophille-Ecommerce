@@ -1,6 +1,7 @@
 import MediumHeading from '../../../components/shared/ui/MediumHeading'
 
 const InTheBox = ( {productIncludes} ) => {
+  console.log(productIncludes);
 
   return (
     <div className='flex flex-col md:flex-row gap-[24px] md:w-[549px] md:h-[159px] md:justify-between xl:w-[350px] h-[250px] xl:flex-col'>

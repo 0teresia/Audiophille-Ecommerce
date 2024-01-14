@@ -27,14 +27,14 @@ const ProductDetail = () => {
     {cart && <CartModal />}
     {shop && <ModalShop />}
     {lightbox && <Lightbox />}
-    <main className="flex flex-col items-center w-[327px] md:w-[689px] xl:w-[1110px]">
+    <main className="flex flex-col items-center w-full xl:w-[1110px]">
       <section className="flex flex-col items-center mb-[120px] xl:mb-[160px]">
         <GoBack />
-        <div className="flex flex-col gap-[120px] xl:gap-[160px] my-[120px] xl:my-[160px]">
-          <Product product={product}/>
-          <div className="flex flex-col gap-[120px] xl:gap-[160px] xl:flex-row">
-            <Features features={features}/>
-            <InTheBox productIncludes={productIncludes}/>
+        <div className="flex flex-col gap-[120px] xl:gap-[160px] my-[120px] xl:my-[160px] ml-72">
+        <Product product={product} imagePath={product.imagePath} />
+          <div className="flex flex-row xl:flex-row">
+          <Features features={features} />
+          <InTheBox productIncludes={productIncludes} />
           </div>
           <Gallery gallery={gallery}/>
           <MayAlsoLike others={others}/>

@@ -3,7 +3,6 @@ import SmallGalleryImage from './UI/SmallGalleryImage';
 import LargeGalleryImage from './UI/LargeGalleryImage';
 import PropTypes from 'prop-types';
 
-
 const Gallery = ({ gallery, screenType }) => {
   const [firstImagePath, setFirstImagePath] = useState('');
   const [secondImagePath, setSecondImagePath] = useState('');
@@ -30,13 +29,13 @@ const Gallery = ({ gallery, screenType }) => {
   return (
     <div className="flex flex-col md:flex-row w-full h-[756px] md:h-[368px] xl:h-[592px] justify-between">
       <div className="h-[368px] md:h-full flex flex-col justify-between">
-        <SmallGalleryImage imagePath={firstImagePath} alt="first" />
-        <SmallGalleryImage imagePath={secondImagePath} alt="second" />
+        <SmallGalleryImage imagePath1={firstImagePath} imagePath2={secondImagePath} alt="first" />
       </div>
-      <LargeGalleryImage imagePath={thirdImagePath} alt="third" />
+      <div className="h-[368px] md:h-full">
+        <LargeGalleryImage imagePath={thirdImagePath} alt="third" />
+      </div>
     </div>
   );
 };
 
 export default Gallery;
-
